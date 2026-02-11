@@ -202,68 +202,7 @@
             background-color:#DB2777;
         }
 
-        /* optional: place spline to the right on large screens */
-        .hero-layout{
-            display:flex;
-            align-items:center;
-            gap:3rem;
-            padding-right:5rem;
-        }
 
-        .hero-3d{
-            flex:1;
-            min-width:0;
-        }
-
-        .hero-3d spline-viewer{
-            width:100%;
-            height:420px;
-            border-radius:24px;
-            overflow:hidden;
-        }
-
-        @media (max-width:900px){
-            .hero-layout{
-                flex-direction:column;
-                padding-right:2rem;
-            }
-        }
-
-        @media(max-width:1300px){
-    header{
-        padding:1erm 0.5rem;
-
-    }
-    .content{margin-top: 85%;
-    }
-    .hero-3d{
-        scale:0.8;
-        top:-20%;
-        right:2%;
-
-    }
-        }
-
-        @media (max-width:768px){
-            header{
-
-
-            }
-            nav{
-                display:none
-            }
-            header h1{
-                font-size:1.5rem;
-            }
-            btn-login{
-                padding:0.6rem
-            }
-            .content{
-                margin-top:25rem;
-
-            }
-    
-        }
        </style>
 </head>
 <body>
@@ -303,19 +242,12 @@
                     </div>
                 </div>
 
-                <!-- Spline viewer area -->
-                <div class="hero-3d">
-                    <spline-viewer
-                      url="https://prod.spline.design/ABCDEF-123456/scene.splinecode"
-                    ></spline-viewer>
-                </div>
             </div>
         </main>
     </div>
 
-    <!-- Spline script MUST be before closing body -->
-    <script type="module" src="https://my.spline.design/worldplanet-QGhSAku7BRIdSy9AN83YVJKQ/"></script>
 </body>
 </html>
+
 
    
